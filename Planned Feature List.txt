@@ -1,0 +1,44 @@
+﻿﻿To-Do List
+
+Features Desired
+	- Multi-campaign support
+	- Soldier Roster
+	- Soldier Class Builder
+	- Base Builder
+	- Mission Tracker/Log
+	- Alien breakdown
+	- Tech Tree
+		- Queue
+		- Searchable
+		- AKA names (meme beacon, etc)
+	- Gray Market planner? (Shows what you need for research, etc)
+	- Map List / Image database?
+	- ini File Builder
+		- Gender/Race Aware namelist maker
+	- Globe map
+		- Add satellites (added to log) for country bonuses
+	- Cross campaign memorial
+	- Campaign notebook
+		- Allows users to create checklists and notes for specific campaign
+
+Calculators
+	- Overwatch chance to hit
+	- Hit chances
+
+Quick Information at a Glance
+	- Perk Trees
+		- Officer
+		- Psi
+		- Enlisted
+		- MEC
+	- Gene Mods
+
+Complete Information Lists
+	- Item List
+	- Perk List
+
+"Cheat" Information
+	- Alien info/perks
+
+POSSIBLE???
+	- Save file reader to import various items into current save

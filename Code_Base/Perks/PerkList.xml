@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PerkList>
+	<Perk>
+		<Name>Absorption Fields</Name>
+		<Description>Reduces most incoming damage to this unit, scaling up as damage increases. Specifically: reduces 40% of any damage taken after 2; after all other damage reduction has been applied</Description>
+	</Perk>
+	<Perk>
+		<Name>Advanced Fire Control</Name>
+		<Description>Shots from Overwatch no longer suffer any Aim penalty</Description>
+	</Perk>
+	<Perk>
+		<Name>Aggression</Name>
+		<Description>Confers +10% critical chance per enemy in sight (max +30%). Aliens visible via squadsight are not counted for bonus.</Description>
+	</Perk>
+	<Perk>
+		<Name>Automated Threat Assessment</Name>
+		<Description>Confers 0.5 DR (50% chance to absorb one point of damage) at all times, and confers +15 defense when in overwatch until the unit takes an overwatch shot.</Description>
+	</Perk>
+	<Perk>
+		<Name>Battle Scanner</Name>
+		<Description>Scanning device that, when thrown, creates a new source of vision for 2 turns. Grants 2 uses. Increases throw range for battle scanners by 70% (does not stack with other perks).</Description>
+	</Perk>
+	<Perk>
+		<Name>Body Shield</Name>
+		<Description>The nearest visible enemy suffers -20 aim and cannot critically hit this unit</Description>
+	</Perk>
+	<Perk>
+		<Name>Bombard</Name>
+		<Description>Throw or launch grenades over exceptionally long distances (+50%).</Description>
+	</Perk>
+	<Perk>		
+		<Name>Bring 'Em On</Name>
+		<Description>Confers 1-4 bonus damage during critical hits (which is then multiplied by 50% due to the critical hit). The damage is higher when more enemies are in view (including squad sight vision). This results in +1.5 dmg for 1-2 enemies, +3 dmg for 3-4 enemies, +4.5 dmg for 5-6 enemies, +6 dmg for 7 or more enemies.</Description>
+	</Perk>
+	<Perk>
+		<Name>Close Combat Specialist</Name>
+		<Description>Confers a reaction shot against any enemy who closes to within 4 tiles. Does not require Overwatch. Warning: Will activate even if unit is concealed.</Description>
+	</Perk>
+	<Perk>
+		<Name>Close Encounters</Name>
+		<Description>The first standard shot made within 4 tiles of the target does not cost an action. Cannot combine with Run And Gun.</Description>
+	</Perk>
+	<Perk>
+		<Name>Collateral Damage</Name>
+		<Description>Area of effect attack that destroys most cover and hits all eligible targets for 1/3rd damage. Unlike most abilities, damage increasing items and perks also only apply 1/3rd damage (note: HEAT and flak cannot be reduced below +2 damage though). This attack cannot critically hit. Shredder ammo and holo-targeting are NOT applied.</Description>
+	</Perk>
+	<Perk>
+		<Name>Combat Drugs</Name>
+		<Description>Smoke grenades confer +20 Will and +20% critical chance in addition to the original 20 defense. The area of effect is also increased by 25%.</Description>
+	</Perk>
+	<Perk>
+		<Name>Concealment</Name>
+		<Description>When the soldier moves to high cover, enemies without special capabilities will not target the soldier (but CAN sense him/her). Does not work if any enemies have line of sight to the soldier's starting position. Leaving cover, being flanked, firing, hacking arrays, and capturing meld will break this concealment. Low Profile units will not gain this bonus by occupying low cover. Firing from concealment grants +30% crit.</Description>
+	</Perk>
+	<Perk>
+		<Name>Covering Fire</Name>
+		<Description>Allows certain reaction shots to trigger on many enemy actions, not just movement (excludes reload, overwatch, and hunker down actions).</Description>
+	</Perk>
+	<Perk>
+		<Name>Damage Control</Name>
+		<Description>When this unit takes damage, all further damage will be reduced by 1 or 2 points (1.5 DR) for the next 2 turns.</Description>
+	</Perk>
+	<Perk>
+		<Name>Damn Good Ground</Name>
+		<Description>Confers +10 Aim and +10 Defense against enemies at lower elevation, in addition to the usual elevation bonuses.</Description>
+	</Perk>
+	<Perk>
+		<Name>Danger Zone</Name>
+		<Description>Increases area of effect of Suppression, rockets, grenade launchers and proximity mine launchers.</Description>
+	</Perk>
+	<Perk>
+		<Name>Deadeye</Name>
+		<Description>Confers +15 aim against flying targets</Description>
+	</Perk>
+	<Perk>
+		<Name></Name>
+		<Description></Description>
+	</Perk>
+</PerkList>
