@@ -2,13 +2,313 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net5.0-windows10.0.17763.0</TargetFramework>
     <RootNamespace>Long_War_Assistant</RootNamespace>
     <UseWPF>true</UseWPF>
+    <MinimumPlatformVersion>7.0</MinimumPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Forms\" />
+    <None Remove="Code_Base\MasterInformationFile.xml" />
+    <None Remove="Code_Base\Perks\Icons\AbsorptionFields.png" />
+    <None Remove="Code_Base\Perks\Icons\Acidic.png" />
+    <None Remove="Code_Base\Perks\Icons\AcidSpit.png" />
+    <None Remove="Code_Base\Perks\Icons\AdaptiveBoneMarrow.png" />
+    <None Remove="Code_Base\Perks\Icons\AdrenalineSurge.png" />
+    <None Remove="Code_Base\Perks\Icons\AdrenalNeurosympathy.png" />
+    <None Remove="Code_Base\Perks\Icons\AdvancedFireControl.png" />
+    <None Remove="Code_Base\Perks\Icons\Aggression.png" />
+    <None Remove="Code_Base\Perks\Icons\AlienGrenade.png" />
+    <None Remove="Code_Base\Perks\Icons\AutomatedThreatAssessment.png" />
+    <None Remove="Code_Base\Perks\Icons\BandOfWarriors.png" />
+    <None Remove="Code_Base\Perks\Icons\Battlescanner.png" />
+    <None Remove="Code_Base\Perks\Icons\BioelectricSkin.png" />
+    <None Remove="Code_Base\Perks\Icons\Bloodcall.png" />
+    <None Remove="Code_Base\Perks\Icons\Bloodlust.png" />
+    <None Remove="Code_Base\Perks\Icons\BodyShield.png" />
+    <None Remove="Code_Base\Perks\Icons\Bombard.png" />
+    <None Remove="Code_Base\Perks\Icons\BringEmOn.png" />
+    <None Remove="Code_Base\Perks\Icons\Bullrush.png" />
+    <None Remove="Code_Base\Perks\Icons\CannonFire.png" />
+    <None Remove="Code_Base\Perks\Icons\ChryssalidSpawn.png" />
+    <None Remove="Code_Base\Perks\Icons\CloseCombatSpecialist.png" />
+    <None Remove="Code_Base\Perks\Icons\CloseEncounters.png" />
+    <None Remove="Code_Base\Perks\Icons\ClusterBomb.png" />
+    <None Remove="Code_Base\Perks\Icons\CollateralDamage.png" />
+    <None Remove="Code_Base\Perks\Icons\CombatDrugs.png" />
+    <None Remove="Code_Base\Perks\Icons\CombinedArms.png" />
+    <None Remove="Code_Base\Perks\Icons\Command.png" />
+    <None Remove="Code_Base\Perks\Icons\Concealment.png" />
+    <None Remove="Code_Base\Perks\Icons\CoveringFire.png" />
+    <None Remove="Code_Base\Perks\Icons\DamageControl.png" />
+    <None Remove="Code_Base\Perks\Icons\DamnGoodGround.png" />
+    <None Remove="Code_Base\Perks\Icons\DangerZone.png" />
+    <None Remove="Code_Base\Perks\Icons\Deadeye.png" />
+    <None Remove="Code_Base\Perks\Icons\DeathBlossom.png" />
+    <None Remove="Code_Base\Perks\Icons\DeathExplosion.png" />
+    <None Remove="Code_Base\Perks\Icons\DenseSmoke.png" />
+    <None Remove="Code_Base\Perks\Icons\DepthPerception.png" />
+    <None Remove="Code_Base\Perks\Icons\DisablingShot.png" />
+    <None Remove="Code_Base\Perks\Icons\DistortionField.png" />
+    <None Remove="Code_Base\Perks\Icons\DoubleTap.png" />
+    <None Remove="Code_Base\Perks\Icons\EspiritDeCorps.png" />
+    <None Remove="Code_Base\Perks\Icons\Executioner.png" />
+    <None Remove="Code_Base\Perks\Icons\ExtraConditioning.png" />
+    <None Remove="Code_Base\Perks\Icons\FieldMedic.png" />
+    <None Remove="Code_Base\Perks\Icons\FieldSurgeon.png" />
+    <None Remove="Code_Base\Perks\Icons\FireInTheHole.png" />
+    <None Remove="Code_Base\Perks\Icons\FireRocket.png" />
+    <None Remove="Code_Base\Perks\Icons\Flight.png" />
+    <None Remove="Code_Base\Perks\Icons\Flush.png" />
+    <None Remove="Code_Base\Perks\Icons\FortioresUna.png" />
+    <None Remove="Code_Base\Perks\Icons\GreaterMindMerge.png" />
+    <None Remove="Code_Base\Perks\Icons\Grenadier.png" />
+    <None Remove="Code_Base\Perks\Icons\Gunslinger.png" />
+    <None Remove="Code_Base\Perks\Icons\Hardened.png" />
+    <None Remove="Code_Base\Perks\Icons\HeatAmmo.png" />
+    <None Remove="Code_Base\Perks\Icons\HeatWarheads.png" />
+    <None Remove="Code_Base\Perks\Icons\HitandRun.png" />
+    <None Remove="Code_Base\Perks\Icons\Holotargeting.png" />
+    <None Remove="Code_Base\Perks\Icons\HyperReactivePupils.png" />
+    <None Remove="Code_Base\Perks\Icons\Implant.png" />
+    <None Remove="Code_Base\Perks\Icons\InTheZone.png" />
+    <None Remove="Code_Base\Perks\Icons\Intimidate.png" />
+    <None Remove="Code_Base\Perks\Icons\IntoTheBreach.png" />
+    <None Remove="Code_Base\Perks\Icons\IronSkin.png" />
+    <None Remove="Code_Base\Perks\Icons\JavelinRockets.png" />
+    <None Remove="Code_Base\Perks\Icons\JetbootModule.png" />
+    <None Remove="Code_Base\Perks\Icons\KillerInstinct.png" />
+    <None Remove="Code_Base\Perks\Icons\Launch.png" />
+    <None Remove="Code_Base\Perks\Icons\LeadByExample.png" />
+    <None Remove="Code_Base\Perks\Icons\Leap.png" />
+    <None Remove="Code_Base\Perks\Icons\LegioPatriaNostra.png" />
+    <None Remove="Code_Base\Perks\Icons\LightEmUp.png" />
+    <None Remove="Code_Base\Perks\Icons\LightningReflexes.png" />
+    <None Remove="Code_Base\Perks\Icons\LockNLoad.png" />
+    <None Remove="Code_Base\Perks\Icons\LoneWolf.png" />
+    <None Remove="Code_Base\Perks\Icons\LowProfile.png" />
+    <None Remove="Code_Base\Perks\Icons\Mayhem.png" />
+    <None Remove="Code_Base\Perks\Icons\Melee.png" />
+    <None Remove="Code_Base\Perks\Icons\MindControl.png" />
+    <None Remove="Code_Base\Perks\Icons\Mindfray.png" />
+    <None Remove="Code_Base\Perks\Icons\MindMerge.png" />
+    <None Remove="Code_Base\Perks\Icons\MuscleFiberDensity.png" />
+    <None Remove="Code_Base\Perks\Icons\NeuralDamping.png" />
+    <None Remove="Code_Base\Perks\Icons\NeuralFeedback.png" />
+    <None Remove="Code_Base\Perks\Icons\OneForAll.png" />
+    <None Remove="Code_Base\Perks\Icons\Opportunist.png" />
+    <None Remove="Code_Base\Perks\Icons\Overload.png" />
+    <None Remove="Code_Base\Perks\Icons\Packmaster.png" />
+    <None Remove="Code_Base\Perks\Icons\Paramedic.png" />
+    <None Remove="Code_Base\Perks\Icons\PlatformStability.png" />
+    <None Remove="Code_Base\Perks\Icons\PrecisionShot.png" />
+    <None Remove="Code_Base\Perks\Icons\PsiDrain.png" />
+    <None Remove="Code_Base\Perks\Icons\PsiInspiration.png" />
+    <None Remove="Code_Base\Perks\Icons\PsiPanic.png" />
+    <None Remove="Code_Base\Perks\Icons\PsiShield.png" />
+    <None Remove="Code_Base\Perks\Icons\PsychokineticStrike.png" />
+    <None Remove="Code_Base\Perks\Icons\Pyrokinesis.png" />
+    <None Remove="Code_Base\Perks\Icons\Ranger.png" />
+    <None Remove="Code_Base\Perks\Icons\RapidFire.png" />
+    <None Remove="Code_Base\Perks\Icons\RapidReaction.png" />
+    <None Remove="Code_Base\Perks\Icons\ReactiveTargetingSensors.png" />
+    <None Remove="Code_Base\Perks\Icons\ReadyForAnything.png" />
+    <None Remove="Code_Base\Perks\Icons\RegenBiofield.png" />
+    <None Remove="Code_Base\Perks\Icons\RegenPheremones.png" />
+    <None Remove="Code_Base\Perks\Icons\Repair.png" />
+    <None Remove="Code_Base\Perks\Icons\RepairServos.png" />
+    <None Remove="Code_Base\Perks\Icons\Resilience.png" />
+    <None Remove="Code_Base\Perks\Icons\Revive.png" />
+    <None Remove="Code_Base\Perks\Icons\Rift.png" />
+    <None Remove="Code_Base\Perks\Icons\Robotic.png" />
+    <None Remove="Code_Base\Perks\Icons\RunGun.png" />
+    <None Remove="Code_Base\Perks\Icons\Sapper.png" />
+    <None Remove="Code_Base\Perks\Icons\Savior.png" />
+    <None Remove="Code_Base\Perks\Icons\SecondaryHeart.png" />
+    <None Remove="Code_Base\Perks\Icons\SemperVigilans.png" />
+    <None Remove="Code_Base\Perks\Icons\Sentinel.png" />
+    <None Remove="Code_Base\Perks\Icons\Sharpshooter.png" />
+    <None Remove="Code_Base\Perks\Icons\ShockAbsorbentArmor.png" />
+    <None Remove="Code_Base\Perks\Icons\ShockAwe.png" />
+    <None Remove="Code_Base\Perks\Icons\ShredderAmmo.png" />
+    <None Remove="Code_Base\Perks\Icons\SmartMacrophages.png" />
+    <None Remove="Code_Base\Perks\Icons\SmokeGrenade.png" />
+    <None Remove="Code_Base\Perks\Icons\SmokeMirrors.png" />
+    <None Remove="Code_Base\Perks\Icons\Snapshot.png" />
+    <None Remove="Code_Base\Perks\Icons\SoOthersMayLive.png" />
+    <None Remove="Code_Base\Perks\Icons\SoShallYouFight.png" />
+    <None Remove="Code_Base\Perks\Icons\Sprinter.png" />
+    <None Remove="Code_Base\Perks\Icons\Squadsight.png" />
+    <None Remove="Code_Base\Perks\Icons\StayFrosty.png" />
+    <None Remove="Code_Base\Perks\Icons\Steadfast.png" />
+    <None Remove="Code_Base\Perks\Icons\Strangle.png" />
+    <None Remove="Code_Base\Perks\Icons\StunImmune.png" />
+    <None Remove="Code_Base\Perks\Icons\Suppression.png" />
+    <None Remove="Code_Base\Perks\Icons\TacticalSense.png" />
+    <None Remove="Code_Base\Perks\Icons\TandemWarheads.png" />
+    <None Remove="Code_Base\Perks\Icons\TelekineticField.png" />
+    <None Remove="Code_Base\Perks\Icons\UnlimitedCloak.png" />
+    <None Remove="Code_Base\Perks\Icons\VitalPointTargeting.png" />
+    <None Remove="Code_Base\Perks\Icons\WillToSurvive.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Code_Base\MasterInformationFile.xml" />
+    <Resource Include="Code_Base\Perks\Icons\AbsorptionFields.png" />
+    <Resource Include="Code_Base\Perks\Icons\Acidic.png" />
+    <Resource Include="Code_Base\Perks\Icons\AcidSpit.png" />
+    <Resource Include="Code_Base\Perks\Icons\AdaptiveBoneMarrow.png" />
+    <Resource Include="Code_Base\Perks\Icons\AdrenalineSurge.png" />
+    <Resource Include="Code_Base\Perks\Icons\AdrenalNeurosympathy.png" />
+    <Resource Include="Code_Base\Perks\Icons\AdvancedFireControl.png" />
+    <Resource Include="Code_Base\Perks\Icons\Aggression.png" />
+    <Resource Include="Code_Base\Perks\Icons\AlienGrenade.png" />
+    <Resource Include="Code_Base\Perks\Icons\AutomatedThreatAssessment.png" />
+    <Resource Include="Code_Base\Perks\Icons\BandOfWarriors.png" />
+    <Resource Include="Code_Base\Perks\Icons\Battlescanner.png" />
+    <Resource Include="Code_Base\Perks\Icons\BioelectricSkin.png" />
+    <Resource Include="Code_Base\Perks\Icons\Bloodcall.png" />
+    <Resource Include="Code_Base\Perks\Icons\Bloodlust.png" />
+    <Resource Include="Code_Base\Perks\Icons\BodyShield.png" />
+    <Resource Include="Code_Base\Perks\Icons\Bombard.png" />
+    <Resource Include="Code_Base\Perks\Icons\BringEmOn.png" />
+    <Resource Include="Code_Base\Perks\Icons\Bullrush.png" />
+    <Resource Include="Code_Base\Perks\Icons\CannonFire.png" />
+    <Resource Include="Code_Base\Perks\Icons\ChryssalidSpawn.png" />
+    <Resource Include="Code_Base\Perks\Icons\CloseCombatSpecialist.png" />
+    <Resource Include="Code_Base\Perks\Icons\CloseEncounters.png" />
+    <Resource Include="Code_Base\Perks\Icons\ClusterBomb.png" />
+    <Resource Include="Code_Base\Perks\Icons\CollateralDamage.png" />
+    <Resource Include="Code_Base\Perks\Icons\CombatDrugs.png" />
+    <Resource Include="Code_Base\Perks\Icons\CombinedArms.png" />
+    <Resource Include="Code_Base\Perks\Icons\Command.png" />
+    <Resource Include="Code_Base\Perks\Icons\Concealment.png" />
+    <Resource Include="Code_Base\Perks\Icons\CoveringFire.png" />
+    <Resource Include="Code_Base\Perks\Icons\DamageControl.png" />
+    <Resource Include="Code_Base\Perks\Icons\DamnGoodGround.png" />
+    <Resource Include="Code_Base\Perks\Icons\DangerZone.png" />
+    <Resource Include="Code_Base\Perks\Icons\Deadeye.png" />
+    <Resource Include="Code_Base\Perks\Icons\DeathBlossom.png" />
+    <Resource Include="Code_Base\Perks\Icons\DeathExplosion.png" />
+    <Resource Include="Code_Base\Perks\Icons\DenseSmoke.png" />
+    <Resource Include="Code_Base\Perks\Icons\DepthPerception.png" />
+    <Resource Include="Code_Base\Perks\Icons\DisablingShot.png" />
+    <Resource Include="Code_Base\Perks\Icons\DistortionField.png" />
+    <Resource Include="Code_Base\Perks\Icons\DoubleTap.png" />
+    <Resource Include="Code_Base\Perks\Icons\EspiritDeCorps.png" />
+    <Resource Include="Code_Base\Perks\Icons\Executioner.png" />
+    <Resource Include="Code_Base\Perks\Icons\ExtraConditioning.png" />
+    <Resource Include="Code_Base\Perks\Icons\FieldMedic.png" />
+    <Resource Include="Code_Base\Perks\Icons\FieldSurgeon.png" />
+    <Resource Include="Code_Base\Perks\Icons\FireInTheHole.png" />
+    <Resource Include="Code_Base\Perks\Icons\FireRocket.png" />
+    <Resource Include="Code_Base\Perks\Icons\Flight.png" />
+    <Resource Include="Code_Base\Perks\Icons\Flush.png" />
+    <Resource Include="Code_Base\Perks\Icons\FortioresUna.png" />
+    <Resource Include="Code_Base\Perks\Icons\GreaterMindMerge.png" />
+    <Resource Include="Code_Base\Perks\Icons\Grenadier.png" />
+    <Resource Include="Code_Base\Perks\Icons\Gunslinger.png" />
+    <Resource Include="Code_Base\Perks\Icons\Hardened.png" />
+    <Resource Include="Code_Base\Perks\Icons\HeatAmmo.png" />
+    <Resource Include="Code_Base\Perks\Icons\HeatWarheads.png" />
+    <Resource Include="Code_Base\Perks\Icons\HitandRun.png" />
+    <Resource Include="Code_Base\Perks\Icons\Holotargeting.png" />
+    <Resource Include="Code_Base\Perks\Icons\HyperReactivePupils.png" />
+    <Resource Include="Code_Base\Perks\Icons\Implant.png" />
+    <Resource Include="Code_Base\Perks\Icons\InTheZone.png" />
+    <Resource Include="Code_Base\Perks\Icons\Intimidate.png" />
+    <Resource Include="Code_Base\Perks\Icons\IntoTheBreach.png" />
+    <Resource Include="Code_Base\Perks\Icons\IronSkin.png" />
+    <Resource Include="Code_Base\Perks\Icons\JavelinRockets.png" />
+    <Resource Include="Code_Base\Perks\Icons\JetbootModule.png" />
+    <Resource Include="Code_Base\Perks\Icons\KillerInstinct.png" />
+    <Resource Include="Code_Base\Perks\Icons\Launch.png" />
+    <Resource Include="Code_Base\Perks\Icons\LeadByExample.png" />
+    <Resource Include="Code_Base\Perks\Icons\Leap.png" />
+    <Resource Include="Code_Base\Perks\Icons\LegioPatriaNostra.png" />
+    <Resource Include="Code_Base\Perks\Icons\LightEmUp.png" />
+    <Resource Include="Code_Base\Perks\Icons\LightningReflexes.png" />
+    <Resource Include="Code_Base\Perks\Icons\LockNLoad.png" />
+    <Resource Include="Code_Base\Perks\Icons\LoneWolf.png" />
+    <Resource Include="Code_Base\Perks\Icons\LowProfile.png" />
+    <Resource Include="Code_Base\Perks\Icons\Mayhem.png" />
+    <Resource Include="Code_Base\Perks\Icons\Melee.png" />
+    <Resource Include="Code_Base\Perks\Icons\MindControl.png" />
+    <Resource Include="Code_Base\Perks\Icons\Mindfray.png" />
+    <Resource Include="Code_Base\Perks\Icons\MindMerge.png" />
+    <Resource Include="Code_Base\Perks\Icons\MuscleFiberDensity.png" />
+    <Resource Include="Code_Base\Perks\Icons\NeuralDamping.png" />
+    <Resource Include="Code_Base\Perks\Icons\NeuralFeedback.png" />
+    <Resource Include="Code_Base\Perks\Icons\OneForAll.png" />
+    <Resource Include="Code_Base\Perks\Icons\Opportunist.png" />
+    <Resource Include="Code_Base\Perks\Icons\Overload.png" />
+    <Resource Include="Code_Base\Perks\Icons\Packmaster.png" />
+    <Resource Include="Code_Base\Perks\Icons\Paramedic.png" />
+    <Resource Include="Code_Base\Perks\Icons\PlatformStability.png" />
+    <Resource Include="Code_Base\Perks\Icons\PrecisionShot.png" />
+    <Resource Include="Code_Base\Perks\Icons\PsiDrain.png" />
+    <Resource Include="Code_Base\Perks\Icons\PsiInspiration.png" />
+    <Resource Include="Code_Base\Perks\Icons\PsiPanic.png" />
+    <Resource Include="Code_Base\Perks\Icons\PsiShield.png" />
+    <Resource Include="Code_Base\Perks\Icons\PsychokineticStrike.png" />
+    <Resource Include="Code_Base\Perks\Icons\Pyrokinesis.png" />
+    <Resource Include="Code_Base\Perks\Icons\Ranger.png" />
+    <Resource Include="Code_Base\Perks\Icons\RapidFire.png" />
+    <Resource Include="Code_Base\Perks\Icons\RapidReaction.png" />
+    <Resource Include="Code_Base\Perks\Icons\ReactiveTargetingSensors.png" />
+    <Resource Include="Code_Base\Perks\Icons\ReadyForAnything.png" />
+    <Resource Include="Code_Base\Perks\Icons\RegenBiofield.png" />
+    <Resource Include="Code_Base\Perks\Icons\RegenPheremones.png" />
+    <Resource Include="Code_Base\Perks\Icons\Repair.png" />
+    <Resource Include="Code_Base\Perks\Icons\RepairServos.png" />
+    <Resource Include="Code_Base\Perks\Icons\Resilience.png" />
+    <Resource Include="Code_Base\Perks\Icons\Revive.png" />
+    <Resource Include="Code_Base\Perks\Icons\Rift.png" />
+    <Resource Include="Code_Base\Perks\Icons\Robotic.png" />
+    <Resource Include="Code_Base\Perks\Icons\RunGun.png" />
+    <Resource Include="Code_Base\Perks\Icons\Sapper.png" />
+    <Resource Include="Code_Base\Perks\Icons\Savior.png" />
+    <Resource Include="Code_Base\Perks\Icons\SecondaryHeart.png" />
+    <Resource Include="Code_Base\Perks\Icons\SemperVigilans.png" />
+    <Resource Include="Code_Base\Perks\Icons\Sentinel.png" />
+    <Resource Include="Code_Base\Perks\Icons\Sharpshooter.png" />
+    <Resource Include="Code_Base\Perks\Icons\ShockAbsorbentArmor.png" />
+    <Resource Include="Code_Base\Perks\Icons\ShockAwe.png" />
+    <Resource Include="Code_Base\Perks\Icons\ShredderAmmo.png" />
+    <Resource Include="Code_Base\Perks\Icons\SmartMacrophages.png" />
+    <Resource Include="Code_Base\Perks\Icons\SmokeGrenade.png" />
+    <Resource Include="Code_Base\Perks\Icons\SmokeMirrors.png" />
+    <Resource Include="Code_Base\Perks\Icons\Snapshot.png" />
+    <Resource Include="Code_Base\Perks\Icons\SoOthersMayLive.png" />
+    <Resource Include="Code_Base\Perks\Icons\SoShallYouFight.png" />
+    <Resource Include="Code_Base\Perks\Icons\Sprinter.png" />
+    <Resource Include="Code_Base\Perks\Icons\Squadsight.png" />
+    <Resource Include="Code_Base\Perks\Icons\StayFrosty.png" />
+    <Resource Include="Code_Base\Perks\Icons\Steadfast.png" />
+    <Resource Include="Code_Base\Perks\Icons\Strangle.png" />
+    <Resource Include="Code_Base\Perks\Icons\StunImmune.png" />
+    <Resource Include="Code_Base\Perks\Icons\Suppression.png" />
+    <Resource Include="Code_Base\Perks\Icons\TacticalSense.png" />
+    <Resource Include="Code_Base\Perks\Icons\TandemWarheads.png" />
+    <Resource Include="Code_Base\Perks\Icons\TelekineticField.png" />
+    <Resource Include="Code_Base\Perks\Icons\UnlimitedCloak.png" />
+    <Resource Include="Code_Base\Perks\Icons\VitalPointTargeting.png" />
+    <Resource Include="Code_Base\Perks\Icons\WillToSurvive.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ProjectResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ProjectResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ProjectResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjectResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

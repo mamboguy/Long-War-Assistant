@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LongWarInformation>
+	<PerkList>
+		<Perk>
+			<Name>Absorption Fields</Name>
+			<Description>Reduces most incoming damage to this unit, scaling up as damage increases. Specifically: reduces 40% of any damage taken after 2; after all other damage reduction has been applied</Description>
+		</Perk>
+		<Perk>
+			<Name>Advanced Fire Control</Name>
+			<Description>Shots from Overwatch no longer suffer any Aim penalty</Description>
+		</Perk>
+		<Perk>
+			<Name>Aggression</Name>
+			<Description>Confers +10% critical chance per enemy in sight (max +30%). Aliens visible via squadsight are not counted for bonus.</Description>
+		</Perk>
+		<Perk>
+			<Name>Automated Threat Assessment</Name>
+			<Description>Confers 0.5 DR (50% chance to absorb one point of damage) at all times, and confers +15 defense when in overwatch until the unit takes an overwatch shot.</Description>
+		</Perk>
+		<Perk>
+			<Name>Battle Scanner</Name>
+			<Description>Scanning device that, when thrown, creates a new source of vision for 2 turns. Grants 2 uses. Increases throw range for battle scanners by 70% (does not stack with other perks).</Description>
+		</Perk>
+		<Perk>
+			<Name>Body Shield</Name>
+			<Description>The nearest visible enemy suffers -20 aim and cannot critically hit this unit</Description>
+		</Perk>
+		<Perk>
+			<Name>Bombard</Name>
+			<Description>Throw or launch grenades over exceptionally long distances (+50%).</Description>
+		</Perk>
+		<Perk>		
+			<Name>Bring 'Em On</Name>
+			<Description>Confers 1-4 bonus damage during critical hits (which is then multiplied by 50% due to the critical hit). The damage is higher when more enemies are in view (including squad sight vision). This results in +1.5 dmg for 1-2 enemies, +3 dmg for 3-4 enemies, +4.5 dmg for 5-6 enemies, +6 dmg for 7 or more enemies.</Description>
+		</Perk>
+		<Perk>
+			<Name>Close Combat Specialist</Name>
+			<Description>Confers a reaction shot against any enemy who closes to within 4 tiles. Does not require Overwatch. Warning: Will activate even if unit is concealed.</Description>
+		</Perk>
+		<Perk>
+			<Name>Close Encounters</Name>
+			<Description>The first standard shot made within 4 tiles of the target does not cost an action. Cannot combine with Run And Gun.</Description>
+		</Perk>
+		<Perk>
+			<Name>Collateral Damage</Name>
+			<Description>Area of effect attack that destroys most cover and hits all eligible targets for 1/3rd damage. Unlike most abilities, damage increasing items and perks also only apply 1/3rd damage (note: HEAT and flak cannot be reduced below +2 damage though). This attack cannot critically hit. Shredder ammo and holo-targeting are NOT applied.</Description>
+		</Perk>
+		<Perk>
+			<Name>Combat Drugs</Name>
+			<Description>Smoke grenades confer +20 Will and +20% critical chance in addition to the original 20 defense. The area of effect is also increased by 25%.</Description>
+		</Perk>
+		<Perk>
+			<Name>Concealment</Name>
+			<Description>When the soldier moves to high cover, enemies without special capabilities will not target the soldier (but CAN sense him/her). Does not work if any enemies have line of sight to the soldier's starting position. Leaving cover, being flanked, firing, hacking arrays, and capturing meld will break this concealment. Low Profile units will not gain this bonus by occupying low cover. Firing from concealment grants +30% crit.</Description>
+		</Perk>
+		<Perk>
+			<Name>Covering Fire</Name>
+			<Description>Allows certain reaction shots to trigger on many enemy actions, not just movement (excludes reload, overwatch, and hunker down actions).</Description>
+		</Perk>
+		<Perk>
+			<Name>Damage Control</Name>
+			<Description>When this unit takes damage, all further damage will be reduced by 1 or 2 points (1.5 DR) for the next 2 turns.</Description>
+		</Perk>
+		<Perk>
+			<Name>Damn Good Ground</Name>
+			<Description>Confers +10 Aim and +10 Defense against enemies at lower elevation, in addition to the usual elevation bonuses.</Description>
+		</Perk>
+		<Perk>
+			<Name>Danger Zone</Name>
+			<Description>Increases area of effect of Suppression, rockets, grenade launchers and proximity mine launchers.</Description>
+		</Perk>
+		<Perk>
+			<Name>Deadeye</Name>
+			<Description>Confers +15 aim against flying targets</Description>
+		</Perk>
+		<Perk>
+			<Name>Dense Smoke</Name>
+			<Description>Increases the defense bonus from smoke grenade from 20 to 40.</Description>
+		</Perk>
+		<Perk>
+			<Name>Disabling Shot</Name>
+			<Description>Allows sniper rifles to fire a shot that causes the target's main weapon to malfunction. The target may use Reload to fix the weapon. 2 turn cooldown. Cannot cause critical hits.</Description>
+		</Perk>
+		<Perk>
+			<Name>Double Tap</Name>
+			<Description>Allows a second action restricted to Standard Shot, Precision Shot, or Disabling Shot as long as the first action was a Standard Shot, Precision Shot, Disabling Shot, or Flush provided no costly actions were taken. 1 turn cooldown. (Note: Double Tap is cancelled in the following cases: (1) the first shot results in a kill, and no more enemies are visible to the unit, or (2) for gunners only, the first shot depletes the ammo.)</Description>
+		</Perk>
+		<Perk>
+			<Name>Executioner</Name>
+			<Description>Confers +10 aim and +10 critical chance against targets at or below 50% health.</Description>
+		</Perk>
+		<Perk>
+			<Name>Extra Conditioning</Name>
+			<Description>Confers 1-4 bonus health based on which type of armor is equipped. Heavier armor increases the bonus.</Description>
+		</Perk>
+		<Perk>
+			<Name>Field Medic</Name>
+			<Description>For soldiers, grants one free use of a medikit per mission and allows additional medikit items to be used two times per battle instead of one. Also allows Restorative Mist items to be used three times per battle instead of once.</Description>
+		</Perk>
+		<Perk>
+			<Name>Field Surgeon</Name>
+			<Description>Reduces (or, for 1 HP flesh wounds, eliminates) Wounded timer on soldiers who sustained HP damage but were not Critically Wounded. Does not affect wound sustained by sending fatigued soldier on a mission.</Description>
+		</Perk>
+		<Perk>
+			<Name>Fire in the Hole</Name>
+			<Description>Grants +10 aim for purposes of reducing scatter if the soldier has not moved this turn. Increases range of Blaster Launcher (which does not scatter).</Description>
+		</Perk>
+		<Perk>
+			<Name>Fire Rocket</Name>
+			<Description>Fire a high explosive rocket using an equipped launcher.</Description>
+		</Perk>
+		<Perk>
+			<Name>Flush</Name>
+			<Description>Fire a shot that may cause non-flying enemies to run to new cover. The shot is easy to hit with (+30 aim), but does reduced damage (-50% base weapon damage), and consumes extra ammo (2 ammo). Hunkered units will not relocate.</Description>
+		</Perk>
+		<Perk>
+			<Name>Grenadier</Name>
+			<Description>Allows 2 destructive grenades in a single inventory slot, and the soldier may throw grenades 20 percent further.</Description>
+		</Perk>
+		<Perk>
+			<Name>HEAT Ammo</Name>
+			<Description>Your primary weapon, not including shotguns, does an additional 50% of its base weapon damage to robotic enemies after any damage reduction is assessed.</Description>
+		</Perk>
+		<Perk>
+			<Name>HEAT Warheads</Name>
+			<Description>Your rockets and grenades do an additional 50% damage to robotic enemies after damage reduction is assessed.</Description>
+		</Perk>
+		<Perk>
+			<Name>Hit and Run</Name>
+			<Description>Your first standard shot of each turn against an uncovered or flanked target does not cost an action. Does not work against flying units, and cannot be used if Run N' Gun activated.</Description>
+		</Perk>
+		<Perk>
+			<Name>Holo-Targeting</Name>
+			<Description>Shooting at or suppressing enemies confers +10 Aim to allies' attacks on those enemies until end of turn.</Description>
+		</Perk>
+		<Perk>
+			<Name>In The Zone</Name>
+			<Description>Killing a flanked or uncovered target does not cost an action. Confers a -1 base damage and -10% critical hit chance penalty for each successive In The Zone kill.</Description>
+		</Perk>
+		<Perk>
+			<Name>Javelin Rockets</Name>
+			<Description>Your rockets now travel much further(+33%) and can hit targets beyond your visual range.</Description>
+		</Perk>
+		<Perk>
+			<Name>Jetboot Module</Name>
+			<Description>When activated, confers the ability to jump to normally inaccessible heights for the rest of the turn.</Description>
+		</Perk>
+		<Perk>
+			<Name>Killer Instinct</Name>
+			<Description>Activating Run and Gun grants +50% critical damage for the rest of the turn.</Description>
+		</Perk>
+		<Perk>
+			<Name>Light 'Em Up</Name>
+			<Description>Standard shots no longer end the turn, if taken as the first action.</Description>
+		</Perk>
+		<Perk>
+			<Name>Lightning Reflexes</Name>
+			<Description>The hit chance of reaction fire against this unit is reduced by 90 percent for the first shot, and by 70 percent for additional shots.</Description>
+		</Perk>
+		<Perk>
+			<Name>Lock N' Load</Name>
+			<Description>Primary weapons receive one additional shot or burst before a reload is required, and you may reload your primary weapon as the first action of your turn without ending the turn.</Description>
+		</Perk>
+		<Perk>
+			<Name>Lone Wolf</Name>
+			<Description>+10 Aim and Critical Chance if not within 7 tiles of an allied unit.</Description>
+		</Perk>
+		<Perk>
+			<Name>Low Profile</Name>
+			<Description>Makes partial cover grant the defense bonus of full cover.</Description>
+		</Perk>
+		<Perk>
+			<Name>Mayhem</Name>
+			<Description>Confers +2 damage for suppression, SAWs, LMGs, explosive grenades, proximity mines and rocket launchers. Confers +4 damage for sniper and long rifles, marksman's, strike and reflex rifles using Standard Shot or Precision Shot.</Description>
+		</Perk>
+		<Perk>
+			<Name>One for All</Name>
+			<Description>When activated, the MEC becomes a high cover element and gains 1 point of damage reduction. Moving or using an arm-based weapon will return the MEC to standard posture.</Description>
+		</Perk>
+		<Perk>
+			<Name>Opportunist</Name>
+			<Description>Eliminates the Aim penalty on reaction shots, and allows reaction shots to cause critical hits.</Description>
+		</Perk>
+		<Perk>
+			<Name>Packmaster</Name>
+			<Description>Limited-use small items (including those from perks) receive 1 additional use.</Description>
+		</Perk>
+		<Perk>
+			<Name>Paramedic</Name>
+			<Description>Once per turn, this unit may use a medikit without spending an action.</Description>
+		</Perk>
+		<Perk>
+			<Name>Platform Stability</Name>
+			<Description>Shots taken before any costly actions have +10 Aim and +10% critical chance. Also grants +10 aim for purposes of reducing scatter if the soldier has not moved this turn, and increases range of Blaster Launcher (which does not scatter).</Description>
+		</Perk>
+		<Perk>
+			<Name>Precision Shot</Name>
+			<Description>With sniper/long rifles, fire a shot that ignores squadsight critical penalties, has an additional +30% critical chance, and provides extra damage on critical hits based on the soldier's weapon tech level (+2 for ballistic/laser/gauss, +3 for pulse, +4 for plasma). With marksman's and strike rifles, allows an unlimited range shot with no other bonuses. 2 turn cooldown.</Description>
+		</Perk>
+		<Perk>
+			<Name>Ranger</Name>
+			<Description>Confers +1 damage with primary weapons, rocket launchers, MEC secondary weapons and sidearms. Negates the long-range accuracy penalty with sidearms when shooting beyond 14 meters.</Description>
+		</Perk>
+		<Perk>
+			<Name>Rapid Fire</Name>
+			<Description>Take two shots against a single target in quick succession. Each shot carries a -15 penalty to Aim.</Description>
+		</Perk>
+		<Perk>
+			<Name>Rapid Reaction</Name>
+			<Description>If on Overwatch, confers a bonus reaction shot (to a maximum three shots total) for every reaction shot that is a hit.</Description>
+		</Perk>
+		<Perk>
+			<Name>Reactive Targeting Sensors</Name>
+			<Description>Unit gets a free shot back at the first enemy who attacks the MEC each turn, provided there's enough ammo to do so.</Description>
+		</Perk>
+		<Perk>
+			<Name>Ready for Anything</Name>
+			<Description>If the unit fires without taking any other costly action, it automatically enters overwatch at the end of its turn.</Description>
+		</Perk>
+		<Perk>
+			<Name>Repair</Name>
+			<Description>For X-Com, grants +2 Arc Thrower charges. On drones, allows repair of robotic units.</Description>
+		</Perk>
+		<Perk>
+			<Name>Repair Servos</Name>
+			<Description>Repairs up to 50% of damage taken (max 2 per turn). Value on icon represents repairs remaining at 2 points per hp. Additional damage taken before repairs are complete reduces how much can be repaired.</Description>
+		</Perk>
+		<Perk>
+			<Name>Resilience</Name>
+			<Description>Confers immunity to critical hits.</Description>
+		</Perk>
+		<Perk>
+			<Name>Revive</Name>
+			<Description>Allows Medikits to revive critically wounded Soldiers at 33% of maximum health instead of just stabilizing them.</Description>
+		</Perk>
+		<Perk>
+			<Name>Run &amp; Gun</Name>
+			<Description>Allows firing or Overwatch after Dashing on the turn Run and Gun is activated. 2 turn cooldown.</Description>
+		</Perk>
+		<Perk>
+			<Name>Sapper</Name>
+			<Description>Increases grenade and proximity mine damage by +1. Also triples damage to the environment.</Description>
+		</Perk>
+		<Perk>
+			<Name>Savior</Name>
+			<Description>Provides 2 item-free medikit charges and +4 healing bonus to medikits. Restorative Mist units restore three more health per use.</Description>
+		</Perk>
+		<Perk>
+			<Name>Sentinel</Name>
+			<Description>Allows two reaction shots during Overwatch, instead of only one.</Description>
+		</Perk>
+		<Perk>
+			<Name>Sharpshooter</Name>
+			<Description>+10 critical chance in all situations, +10 Aim against enemies in full cover.</Description>
+		</Perk>
+		<Perk>
+			<Name>Shock-Absorbent Armor</Name>
+			<Description>Damage received from enemies within 4 tiles is reduced by 33%.</Description>
+		</Perk>
+		<Perk>
+			<Name>Shock &amp; Awe</Name>
+			<Description>Allows 1 additional standard rocket to be fired per battle.</Description>
+		</Perk>
+		<Perk>
+			<Name>Shredder Ammo</Name>
+			<Description>The Shredder debuff causes any unit hit to take 40% additional damage (after DR, rounded down) from all sources. Gunners and MECs apply the Shredder debuff for the remainder of the current turn to any target struck by their primary weapon. Rocketeers get an extra rocket that is weaker than a standard rocket (60% rounded down), cannot penetrate cover, has a +50% larger blast radius, and applies the Shredder debuff to all targets struck by the rocket for the next 3 turns.</Description>
+		</Perk>
+		<Perk>
+			<Name>Smoke &amp; Mirrors</Name>
+			<Description>Allows one additional use of all support grenades during each mission. It also increases charges from Smoke Grenade and Battlescanner perks by 1.</Description>
+		</Perk>
+		<Perk>
+			<Name>Smoke Grenade</Name>
+			<Description>Deploy a smoke grenade once per mission. The smoke confers +20 defense and prevents flanking for all enemy and allied units. Lasts 2 turns. Taking the perk on level up also allows an additional action after deploying a smoke grenade.</Description>
+		</Perk>
+		<Perk>
+			<Name>Snapshot</Name>
+			<Description>For snipers, removes the sniper rifle's restriction on firing and Overwatch after taking a costly action. Any shots taken after using any costly action suffer a -10 Aim penalty. For rocketeers, reduces the aim and range penalty for launching a rocket after taking a costly action to 25% (from 50%).</Description>
+		</Perk>
+		<Perk>
+			<Name>Sprinter</Name>
+			<Description>Grants +4 mobility (roughly 3 tiles movement).</Description>
+		</Perk>
+		<Perk>
+			<Name>Squadsight</Name>
+			<Description>Allows firing at targets in any ally's sight radius within weapon range, but critical chance suffers a -20% penalty. Extended range weapons (MEC primary weapons, Marksman and Strike Rifles, and LMGs) gain roughly five extra tiles range. Sniper rifles have infinite range. Overwatch fire does not extend to squadsight ranges, except with Marksman's and Strike Rifles.</Description>
+		</Perk>
+		<Perk>
+			<Name>Steadfast</Name>
+			<Description>Never panic as a result of getting wounded, allies panicking, allies getting wounded or killed, or the intimidation ability.</Description>
+		</Perk>
+		<Perk>
+			<Name>Suppression</Name>
+			<Description>Fire a barrage that pins down a target, granting Opportunist reaction fire against it if it moves. Imposes a -30 penalty to aim and reduces range of many area-of-effect attacks, including grenades. Also negates overwatch from the target while suppression is active. Lastly, enemy AI prioritizes breaking the suppression by shooting the suppressor, so it functions as a mini-taunt. Not possible with shotguns, sniper rifles, or strike rifles.</Description>
+		</Perk>
+		<Perk>
+			<Name>Tactical Sense</Name>
+			<Description>Confers +5 Defense per enemy in sight (max +20).</Description>
+		</Perk>
+		<Perk>
+			<Name>Tandem Warheads</Name>
+			<Description>Explosives employed by this soldier do full damage to the maximum extent of their area of effect.</Description>
+		</Perk>
+		<Perk>
+			<Name>Vital Point Targeting</Name>
+			<Description>Confers 2 bonus damage with primary guns, and +1 damage with sidearms, against humans and alien targets whose species have been autopsied.</Description>
+		</Perk>
+		<Perk>
+			<Name>Will to Survive</Name>
+			<Description>Gain 1.5 Damage Reduction (DR) if in cover and not flanked.</Description>
+		</Perk>
+		<Perk>
+			<Name>Acidic</Name>
+			<Description>Acid enemies wounded with melee attacks. / On death, leave acid cloud on the battlefield. Unit is also immune to Acid attacks and effects.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Acid Spit</Name>
+			<Description>Spit acid at long range, causing a noxious cloud to remain briefly on the battlefield.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Alien Grenade</Name>
+			<Description>Does 5 (3-7) damage.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Bull Rush</Name>
+			<Description>Charge towards an enemy to make a melee attack. Breaks nearby cover.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Bloodlust</Name>
+			<Description>Allows the Berserker to charge an enemy that wounds it.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Blood Call</Name>
+			<Description>Unleash a bestial roar that inspires nearby allies of the same species to greater speed, focus, and resolve for 3 turns. 4 turn cooldown.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Cannon Fire</Name>
+			<Description>Beam attack that causes high damage and grants free Overwatch. If the Sectopod does not move, Cannon Fire can be used twice (against different enemies).</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Chryssalid Spawn</Name>
+			<Description>If a Zombie has been implanted with Chryssalid Eggs, they hatch into a Chryssalid after 3 turns if the Zombie host is not killed.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Cluster Bomb</Name>
+			<Description>Mark a large area, and after one turn, saturate it with a barrage of explosive mini-bombs.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Death Blossom</Name>
+			<Description>Project an intense energy field from Closed position, damaging all nearby enemies.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Death Explosion</Name>
+			<Description>Explode on death, damaging everything in a small radius.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Flight</Name>
+			<Description>Flying units can bypass ground obstacles. They can remain in flight if they have sufficient fuel.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Greater Mind Merge</Name>
+			<Description>Merge minds with all lesser allies of the same species nearby, granting them +25 critical chance, +25 will, and +1 health per 45 of caster's will.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Gunslinger</Name>
+			<Description>Confers +1 damage with sidearms and negates the long-range accuracy penalty when shooting beyond 14 meters.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Hardened</Name>
+			<Description>Confers extra protection against critical hits. Enemies suffer a -60% chance to inflict critical hits.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Implant</Name>
+			<Description>Victims are implanted with a Chryssalid egg if they are killed by a Chryssalid's attack.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Intimidate</Name>
+			<Description>Reacts unpredictably when wounded, provoking panic in enemies.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Launch</Name>
+			<Description>Move anywhere on the battlefield in a single turn. Launch cannot be used indoors.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Leap</Name>
+			<Description>Allows vertical leaps onto elevated surfaces during movement.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Melee</Name>
+			<Description>Melee units can only attack in melee.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Overload</Name>
+			<Description>Overload the unit's own power source, destroying the unit but causing explosive damage similar to a grenade's.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Psi Drain</Name>
+			<Description>Drain health from an ally.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Psi Shield</Name>
+			<Description>This unit generates a psionic force shield when targeted by an ally's Mind Merge ability.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Robotic</Name>
+			<Description>Robotic/mechanized units are immune to psionic, acidic, and fire attacks. They are also immune to stun, panic, strangle, and implant.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Strangle</Name>
+			<Description>Strangle can be used against adjacent humans unprotected by strangle-resistant armor, items or abilities.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Stun Immune</Name>
+			<Description>This unit cannot be stunned with the Arc Thrower; taking a live specimen is not possible.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Unlimited Cloak</Name>
+			<Description>The Seeker becomes invisible to enemies. It can use its tentacles to attack from stealth mode but it must deactivate the stealth mode to use its ranged attack.</Description>
+			<Type>Alien</Type>
+		</Perk>
+		<Perk>
+			<Name>Adaptive Bone Marrow</Name>
+			<Description>Regenerate wounds. For humans, wound recovery time is reduced by 66% (stacks with Advanced Surgery), and unit regenerates 2 hp every turn up to the HP max without armor. Imposes +6 hours fatigue after missions.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Adrenal Neurosympathy</Name>
+			<Description>Overloads the soldiers adrenal glands: when a kill is confirmed the soldier emits pheromones that grant offensive benefits to all nearby squad mates. Imposes +9 hours fatigue.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Bioelectric Skin</Name>
+			<Description>The soldier projects an electric field from his or her skin, revealing but not alerting nearby enemies, and is immune to strangulation. Imposes +6 hours fatigue.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Depth Perception</Name>
+			<Description>Height Advantage confers an additional +5 Aim and +5 critical chance. Imposes +3 hours fatigue.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Hyper-Reactive Pupils</Name>
+			<Description>Confers +10 Aim on any shot after a miss. Imposes +3 hours fatigue after missions.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Iron Skin</Name>
+			<Description>All damage taken is reduced by 1. Imposes +12 hours postmission fatigue for genemodded soldiers.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Muscle-fiber Density</Name>
+			<Description>Confers superhuman leg strength, enabling the soldier to reach high positions without the need for ladders or other climbing aids. Imposes +9 hours fatigue.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Neural Damping</Name>
+			<Description>Confers +20 Will when defending against psi attacks, and immunity to panic. If the soldier is Mind Controlled, the control is cancelled, and the soldier is stunned for 1 turn instead. Soldiers with this perk cannot undergo psi training and cannot possess psi abilities. Imposes +6 hours fatigue after missions.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Secondary Heart</Name>
+			<Description>Causes soldiers to bleed out instead of dying the first time they go to zero health in a mission. The bleed-out timer is extended by 2 turns. Prevents loss of Will from critical wounds. Imposes +6 hours fatigue after missions.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Smart Macrophages</Name>
+			<Description>Medikits and Restorative Mist heal 2 HP more when used on the soldier. Confers complete immunity to poison and acid. Imposes +3 hours postmission fatigue.</Description>
+			<Type>Gene</Type>
+		</Perk>
+		<Perk>
+			<Name>Band of Warriors</Name>
+			<Description>Squad receives +2 Aim per continent bonus XCOM has earned.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Combined Arms</Name>
+			<Description>Ignore one point of the enemy's damage reduction. For officers, this ability is provided to the entire squad.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Command</Name>
+			<Description>Grant a yellow move to an XCOM soldier in sight ranger whose turn is complete. Cannot be used on soldiers on Overwatch, who have Steadied their weapon, who have Hunkered Down, or used One For All. Does not allow use of multi-action perks like Close Encounters or Hit and Run. Four-turn cooldown. Note that this will NOT allow you to fire move-limited weapons (sniper rifles and LMGs), if you have taken a costly action (e.g. if you double-moved and then were commanded). The only exception to that is, after using double-tap, a unit can be commanded to fire once more, effectively triple-tapping.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Espirit de Corps</Name>
+			<Description>Squad receives +5 Will and +5 Defense in battle. Robotic units receive only the Defense bonus.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Fortiores Una</Name>
+			<Description>Nearby allies (8 tiles) receive an additional 2/3 damage reduction if they are in half cover and 1 damage reduction if they are in full cover.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Into the Breach</Name>
+			<Description>All soldiers in the squad at Sergeant rank or lower gain +25% XP for completing missions.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Lead by Example</Name>
+			<Description>This officer substitutes his or her Will for that of all nearby lower-Will squadmates.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Legio Patria Nostra</Name>
+			<Description>Squad receives +1 Will per different nationality in the squad.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Semper Vigilans</Name>
+			<Description>Squad receives +5 Defense when in cover.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>So Others May Live</Name>
+			<Description>Squad members receive a permanent increase of +1 Aim and Will for completing a mission under this officer with no soldier deaths, up to a maximum of +8.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>So Shall You Fight</Name>
+			<Description>All units in the squad receive +25% XP for every kill.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Stay Frosty</Name>
+			<Description>All units in the squad have post-mission fatigue reduced by one day.</Description>
+			<Type>Officer</Type>
+		</Perk>
+		<Perk>
+			<Name>Distortion Field</Name>
+			<Description>Nearby allies in cover receive +10 Defense. Imposes +6 hours postmission fatigue for psi soldiers. (Passive ability)</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Mind Control</Name>
+			<Description>Difficult psi technique that, if successful, grants control of the target for 3 turns. Does not work on robotic enemies. 5 turn cooldown. Imposes +12 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Mind Merge</Name>
+			<Description>Merge minds with the target, granting the target +25% critical chance, bonus will, and temporary health (for aliens) or damage reduction (for humans: DR=caster_will/60). Imposes +6 hours postmission fatigue for psi soldiers.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Mindfray</Name>
+			<Description>Causes the target to lose grip on reality, causing -25 aim/stack, -25 will/stack, a reduced area-of-effect attack range, reduced mobility, and doing one base damage. Robotic units are immune. Lasts 3 turns. 2 turn cooldown. Imposes +24 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Neural Feedback</Name>
+			<Description>Causes damage to psi attackers and puts all of their psi attacks on cooldown. Does not reduce the attacks' chance of success. Protects the psion and nearby allies who pass a will check. Imposes +24 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Psi Inspiration</Name>
+			<Description>Removes Mindfray and panic from all allies within 3 tiles, and strengthen their Will by +30 for 3 turns, 4 turn cooldown. Imposes +6 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Psi Panic</Name>
+			<Description>Cause target to panic on its following turn, if the target's Will is overcome. The duration is (caster Will / 50) turns; fractional results have a chance to be rounded up, the chance is proportional to the distance to the next integer. Robotic enemies are immune, 2 turn cooldown. Imposes +6 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Psychokinetic Strike</Name>
+			<Description>Project a bolt of pure psi force that destroys cover but does not harm units. 4 turn cooldown. Imposes 12 hours additional post-mission fatigue.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Pyrokinesis</Name>
+			<Description>Ignite fires at the target location. Does not cause injuries. Imposes +12 hours postmission fatigue for psi soldiers.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Regen Biofield</Name>
+			<Description>Nearby allies are healed for 1 health each turn, and has a 100% chance to remove acid effects (after b15f2). This does not repair damage to body armor or other hp-granting items. Imposes +24 hours postmission fatigue for psi soldiers. (Passive ability)</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Rift</Name>
+			<Description>Devastate an area with a storm of psi energy. The rift does more damage against targets with low Will, and reduced damage against targets with high Will. 4 turn cooldown. Requires special armor designed for psionic beings. Imposes +12 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Telekinetic Field</Name>
+			<Description>Create an immobile telekinetic field that lasts through the enemy turn. The field distorts and deflects incoming attacks, granting +40 Defense to allies within the field, 4 turn cooldown. Imposes +12 hours fatigue after missions.</Description>
+			<Type>Psionic</Type>
+		</Perk>
+		<Perk>
+			<Name>Adrenaline Surge</Name>
+			<Description>Confers +10 Aim and +10% critical chance if the unit is wounded.</Description>
+			<Type>Exalt</Type>
+		</Perk>
+		<Perk>
+			<Name>Regen Pheremones</Name>
+			<Description>This unit and all nearby allies are healed for 1 health each turn.</Description>
+			<Type>Exalt</Type>
+		</Perk>	
+	</PerkList>
+</LongWarInformation>

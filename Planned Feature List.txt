@@ -24,6 +24,7 @@ Features Desired
 Calculators
 	- Overwatch chance to hit
 	- Hit chances
+	- DR
 
 Quick Information at a Glance
 	- Perk Trees

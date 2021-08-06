@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Long_War_Assistant.Forms;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Long_War_Assistant
 {
@@ -23,6 +11,17 @@ namespace Long_War_Assistant
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void PerkList_Button_Click(object sender, RoutedEventArgs e)
+        {
+            _currentView_Panel.Children.Clear();
+            _currentView_Panel.Children.Add(new PerkViewer());
+        }
+
+        private void NothingButton_Click(object sender, RoutedEventArgs e)
+        {
+            _currentView_Panel.Children.Clear();
         }
     }
 }
