@@ -12,25 +12,6 @@
         MasterSergeant
     }
 
-    public enum OfficerRanks
-    {
-        Lieutenant,
-        Captain,
-        Major,
-        Colonel,
-        FieldCommander
-    }
-
-    public enum PsiRanks
-    {
-        Awakened,
-        Sensitive,
-        Talent,
-        Adept,
-        Psion,
-        Master
-    }
-
     public static class EnlistedRanksExtension
     {
         public static bool IsAtLeastRank(this EnlistedRanks myRank, EnlistedRanks requiredRank)
@@ -128,22 +109,6 @@
                 // This case will only happen if CanPromote is never checked.
                 EnlistedRanks.MasterSergeant => throw new System.NotSupportedException(),
                 _ => EnlistedRanks.Private,
-            };
-        }
-    }
-
-    public static class OfficerRanksExtension
-    {
-        public static string GetShortName(this OfficerRanks ranks)
-        {
-            return ranks switch
-            {
-                OfficerRanks.Lieutenant => "Lt",
-                OfficerRanks.Captain => "Capt",
-                OfficerRanks.Major => "Maj",
-                OfficerRanks.Colonel => "Col",
-                OfficerRanks.FieldCommander => "FC",
-                _ => "INVALID",
             };
         }
     }

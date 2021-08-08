@@ -4,20 +4,7 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
 {
     public abstract class Specialization
     {
-
         public Specialization() { }
-        /*
-         * TODO - need to find a good place for this
-         * 
-         * 4 types
-         *  - Unspecialized (default)
-         *  - Officer
-         *  - Psionic
-         *  - MEC
-         *  
-         *  Can affect returned name (officers)
-         *  Handle requirements for specialization promotions (officer + psi)
-         */
 
         #region Specialization checks
         // Only an unspecialized solder can be specialized, so designed by default that a solder will not be able to specialize
@@ -36,5 +23,11 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
             return false;
         }
         #endregion
+
+        public abstract string GetSpecializationRank();
+
+        public abstract void PromoteSpecialization();
+
+        public abstract bool DoesSpecializationRankOverrideNormalRank();
     }
 }

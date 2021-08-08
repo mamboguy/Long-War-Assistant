@@ -9,8 +9,14 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
 {
     public class Unspecialized_Specialization : Specialization
     {
+        private Organic_Classes _soldierClass;
 
         public Unspecialized_Specialization() : base() { }
+
+        public void AssignSoldierClass(Organic_Classes soldierClass)
+        {
+            _soldierClass = soldierClass;
+        }
 
         public override bool CanMakeMEC(XComSoldier soldier)
         {
@@ -41,6 +47,21 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
             // TODO - Implement the check for neural damping gene mod
 
             return base.CanMakePsi(soldier);
+        }
+
+        public override bool DoesSpecializationRankOverrideNormalRank()
+        {
+            return false;
+        }
+
+        public override string GetSpecializationRank()
+        {
+            return "";
+        }
+
+        public override void PromoteSpecialization()
+        {
+            // Do nothing
         }
     }
 }

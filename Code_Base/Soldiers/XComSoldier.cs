@@ -1,4 +1,5 @@
 ﻿using Long_War_Assistant.Code_Base.Soldiers;
+using Long_War_Assistant.Code_Base.Soldiers.Classes;
 using Long_War_Assistant.Code_Base.Soldiers.Specialization;
 using System.Collections.Generic;
 
@@ -8,17 +9,18 @@ namespace Long_War_Assistant.Code_Base.Soldier
     {
         public XComSoldier() 
         {
-            //Default a new soldier to being unspecialized
+            //Default a new soldier to being unspecialized and a PFC rank
             _specialization = new Unspecialized_Specialization();
+
+            Stats = new SoldierStats();
         }
 
         public SoldierStats Stats { get; set; }
-        public Soldier_Classes SoldierClass { get; set; }
+        public ISoldierClass SoldierClass { get; set; }
         public EnlistedRanks SoldierRank { get; set; }
         public List<Perk> PerkList { get; set; }
 
         private Specialization _specialization;
-
 
         /// <summary>
         /// Promotes a soldier to the next rank and levels up their stats

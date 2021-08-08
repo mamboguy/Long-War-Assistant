@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Code_Base\Images\Aim.png" />
     <None Remove="Code_Base\MasterInformationFile.xml" />
     <None Remove="Code_Base\Perks\Icons\AbsorptionFields.png" />
     <None Remove="Code_Base\Perks\Icons\Acidic.png" />
@@ -150,6 +151,7 @@
     <None Remove="Code_Base\Perks\Icons\UnlimitedCloak.png" />
     <None Remove="Code_Base\Perks\Icons\VitalPointTargeting.png" />
     <None Remove="Code_Base\Perks\Icons\WillToSurvive.png" />
+    <None Remove="Forms\Images\SoldierViewer\Aim_Icon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -294,6 +296,7 @@
     <Resource Include="Code_Base\Perks\Icons\UnlimitedCloak.png" />
     <Resource Include="Code_Base\Perks\Icons\VitalPointTargeting.png" />
     <Resource Include="Code_Base\Perks\Icons\WillToSurvive.png" />
+    <Resource Include="Forms\Images\SoldierViewer\Aim_Icon.png" />
   </ItemGroup>
 
   <ItemGroup>
