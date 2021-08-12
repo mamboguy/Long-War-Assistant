@@ -1,4 +1,5 @@
 ﻿using Long_War_Assistant.Code_Base.Soldier;
+using System;
 
 namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
 {
@@ -29,5 +30,14 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
         public abstract void PromoteSpecialization();
 
         public abstract bool DoesSpecializationRankOverrideNormalRank();
+
+        /// <summary>
+        /// This method returns the modifier to get the appropriate class icon if the soldier is a Psi
+        /// Only the psi class will return something here, so default to no return value
+        /// </summary>
+        public virtual string GetPsiString()
+        {
+            return "";
+        }
     }
 }

@@ -18,27 +18,26 @@ namespace Long_War_Assistant
 
         private void PerkList_Button_Click(object sender, RoutedEventArgs e)
         {
-            loadCurrentPanel(new PerkViewer());
+            LoadCurrentPanel(new PerkViewer());
         }
 
         private void NothingButton_Click(object sender, RoutedEventArgs e)
         {
-            loadCurrentPanel(null);
+            LoadCurrentPanel(null);
         }
 
         private void SoldierListButton_Click(object sender, RoutedEventArgs e)
         {
-            XComSoldier soldier = new XComSoldier();
-            loadCurrentPanel(new SoldierViewer(soldier));
+            LoadCurrentPanel(new SoldierViewer(null));
         }
 
-        private void loadCurrentPanel(Control newControl)
+        private void LoadCurrentPanel(Control newControl)
         {
             _currentView_Panel.Children.Clear();
 
             if (newControl != null)
             {
-            _currentView_Panel.Children.Add(newControl);
+                _currentView_Panel.Children.Add(newControl);
             }
         }
     }

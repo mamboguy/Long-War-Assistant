@@ -27,6 +27,11 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
         {
             _psiRank = _psiRank.Promote();
         }
+
+        public override string GetPsiString()
+        {
+            return "_Psi";
+        }
     }
 
     public enum PsiRank

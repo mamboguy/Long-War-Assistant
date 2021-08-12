@@ -36,7 +36,5 @@ namespace Long_War_Assistant.Code_Base
         {
             AdditionalStats = additionalStats;
         }
-
-        // TODO - make sure to sanitize inputs from name for the icon name
     }
 }

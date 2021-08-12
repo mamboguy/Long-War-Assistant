@@ -1,18 +1,6 @@
 ﻿using Long_War_Assistant.Code_Base.Soldier;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Long_War_Assistant.Forms
 {
@@ -21,21 +9,64 @@ namespace Long_War_Assistant.Forms
     /// </summary>
     public partial class SoldierViewer : UserControl
     {
-        public SoldierViewer(XComSoldier soldier)
+        public SoldierViewer(List<XComSoldier> soldierList)
         {
             InitializeComponent();
 
-            _aimStatLabel.Content = soldier.Stats.Aim;
+            soldierList = new List<XComSoldier>()
+            {
+                new XComSoldier("Mambo"),
+                new XComSoldier("Redire"),
+                new XComSoldier("Krissy"),
+                new XComSoldier("Grinder"),
+                new XComSoldier("Warbird")
+            };
+
+            _soldierListView.ItemsSource = soldierList;
         }
 
-        /*
-         * Aim, Defense, Will, Mobility, HP
-         * 
-         * BuildFacilities_I6F  - HP
-         * Attack               - Aim
-         * Defense              - Defense
-         * SituationRoom_173    - Mobility
-         * Promote_psi          - Will
-         */
+        private void UpdateStats()
+        {
+            XComSoldier selectedSoldier = _soldierListView.SelectedItem as XComSoldier;
+
+            _aimStatLabel.Content = selectedSoldier.Stats.Aim;
+            _defenseStatLabel.Content = selectedSoldier.Stats.Defense;
+            _hpStatLabel.Content = selectedSoldier.Stats.HP;
+            _mobilityStatLabel.Content = selectedSoldier.Stats.Mobility;
+            _willStatLabel.Content = selectedSoldier.Stats.Will;
+            _damagereductionStatLabel.Content = selectedSoldier.Stats.DamageReduction;
+        }
+
+        private void SoldierList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            UpdateStats();
+        }
+
+        private void PromoteButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            XComSoldier selectedSoldier = _soldierListView.SelectedItem as XComSoldier;
+
+            selectedSoldier.Promote();
+
+            UpdateStats();
+        }
+
+        private void DemoteButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            XComSoldier selectedSoldier = _soldierListView.SelectedItem as XComSoldier;
+
+            selectedSoldier.Demote();
+
+            UpdateStats();
+        }
+
+        private void PsiButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            XComSoldier selectedSoldier = _soldierListView.SelectedItem as XComSoldier;
+
+            selectedSoldier.MakePsi();
+
+            UpdateStats();
+        }
     }
 }

@@ -7,6 +7,7 @@
         private int _will;
         private int _defense;
         private int _aim;
+        private double _dr;
 
         public SoldierStats() 
         {
@@ -16,6 +17,7 @@
             _mobility = 13;
             _defense = 0;
             _will = 30;
+            _dr = 0;
         }
 
         public SoldierStats(int mobility, int hp, int will, int defense, int aim)
@@ -25,6 +27,7 @@
             _will = will;
             _defense = defense;
             _aim = aim;
+            _dr = 0;
         }
 
         public void AddAdditionalStats(SoldierStats additionalStats)
@@ -34,8 +37,14 @@
             _will += additionalStats._will;
             _defense += additionalStats._defense;
             _aim += additionalStats._aim;
+            _dr += additionalStats._dr;
         }
 
         public int Aim { get { return _aim; } }
+        public int Will { get { return _will; } }
+        public int Mobility { get { return _mobility; } }
+        public int HP { get { return _hp; } }
+        public int Defense { get { return _defense; } }
+        public double DamageReduction { get { return _dr; } }
     }
 }

@@ -1,19 +1,15 @@
 ﻿using Long_War_Assistant.Code_Base.Soldier;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Long_War_Assistant.Code_Base.Soldiers.Classes;
 
 namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
 {
     public class Unspecialized_Specialization : Specialization
     {
-        private Organic_Classes _soldierClass;
+        private SoldierClass _soldierClass;
 
         public Unspecialized_Specialization() : base() { }
 
-        public void AssignSoldierClass(Organic_Classes soldierClass)
+        public void AssignSoldierClass(SoldierClass soldierClass)
         {
             _soldierClass = soldierClass;
         }
@@ -24,7 +20,7 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
             //      - At least Lance Corporal rank
             //      - Not an Officer or Psionic soldier (Unspecialized means they aren't)
 
-            return soldier.SoldierRank.IsAtLeastRank(EnlistedRanks.LanceCorporal);
+            return soldier.SoldierRank.IsAtLeastRank(EnlistedRanks.LCPL);
         }
 
         public override bool CanMakeOfficer(XComSoldier soldier)
@@ -34,7 +30,7 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
             //      - Not a MEC or Psionic soldier (Unspecialized means they aren't)
             //      - Been on at least 5 missions (will not implement)
 
-            return soldier.SoldierRank.IsAtLeastRank(EnlistedRanks.Corporal);
+            return soldier.SoldierRank.IsAtLeastRank(EnlistedRanks.CPL);
         }
 
         public override bool CanMakePsi(XComSoldier soldier)

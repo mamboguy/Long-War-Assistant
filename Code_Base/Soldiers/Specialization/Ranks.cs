@@ -2,18 +2,23 @@
 {
     public enum EnlistedRanks
     {
-        Private,
-        Specialist,
-        LanceCorporal,
-        Corporal,
-        Sergeant,
-        TechSergeant,
-        GunnerySergeant,
-        MasterSergeant
+        PFC,
+        SPEC,
+        LCPL,
+        CPL,
+        SGT,
+        TSGT,
+        GSGT,
+        MSGT
     }
 
     public static class EnlistedRanksExtension
     {
+        public static string RankImagePath(this EnlistedRanks rank)
+        {
+            return "pack://application:,,,/Forms/Images/SoldierViewer/RankImages/" + rank.ToString() + ".png";
+        }
+
         public static bool IsAtLeastRank(this EnlistedRanks myRank, EnlistedRanks requiredRank)
         {
             return myRank >= requiredRank;
@@ -23,31 +28,15 @@
         {
             return ranks switch
             {
-                EnlistedRanks.Private => 0,
-                EnlistedRanks.Specialist => 120,
-                EnlistedRanks.LanceCorporal => 350,
-                EnlistedRanks.Corporal => 700,
-                EnlistedRanks.Sergeant => 1200,
-                EnlistedRanks.TechSergeant => 2000,
-                EnlistedRanks.GunnerySergeant => 3000,
-                EnlistedRanks.MasterSergeant => 4000,
+                EnlistedRanks.PFC => 0,
+                EnlistedRanks.SPEC => 120,
+                EnlistedRanks.LCPL => 350,
+                EnlistedRanks.CPL => 700,
+                EnlistedRanks.SGT => 1200,
+                EnlistedRanks.TSGT => 2000,
+                EnlistedRanks.GSGT => 3000,
+                EnlistedRanks.MSGT => 4200,
                 _ => -1,
-            };
-        }
-
-        public static string GetShortName(this EnlistedRanks ranks)
-        {
-            return ranks switch
-            {
-                EnlistedRanks.Private => "PFC",
-                EnlistedRanks.Specialist => "Spec",
-                EnlistedRanks.LanceCorporal => "LCpl",
-                EnlistedRanks.Corporal => "Cpl",
-                EnlistedRanks.Sergeant => "Sgt",
-                EnlistedRanks.TechSergeant => "TSgt",
-                EnlistedRanks.GunnerySergeant => "GSgt",
-                EnlistedRanks.MasterSergeant => "MSgt",
-                _ => "",
             };
         }
 
@@ -55,15 +44,13 @@
         /// MEC'ing a troop is the only reason someone should be demoted.  As such, since only LCPLs and above can be
         /// MEC'd, then Privates and Specialists can't be demoted
         /// </summary>
-        /// <param name="rank"></param>
-        /// <returns></returns>
         public static bool CanDemote(this EnlistedRanks rank)
         {
             //The only rank that can't be demoted are PFCs
             return rank switch
             {
-                EnlistedRanks.Private => false,
-                EnlistedRanks.Specialist => false,
+                EnlistedRanks.PFC => false,
+                EnlistedRanks.SPEC => false,
                 _ => true,
             };
         }
@@ -72,14 +59,13 @@
         {
             return ranks switch
             {
-                EnlistedRanks.Private => throw new System.NotSupportedException(),
-                EnlistedRanks.Specialist => throw new System.NotSupportedException(),
-                EnlistedRanks.LanceCorporal => EnlistedRanks.Specialist,
-                EnlistedRanks.Corporal => EnlistedRanks.LanceCorporal,
-                EnlistedRanks.Sergeant => EnlistedRanks.Corporal,
-                EnlistedRanks.TechSergeant => EnlistedRanks.Sergeant,
-                EnlistedRanks.GunnerySergeant => EnlistedRanks.TechSergeant,
-                EnlistedRanks.MasterSergeant => EnlistedRanks.MasterSergeant,
+                EnlistedRanks.PFC or EnlistedRanks.SPEC => throw new System.NotSupportedException(),
+                EnlistedRanks.LCPL => EnlistedRanks.SPEC,
+                EnlistedRanks.CPL => EnlistedRanks.LCPL,
+                EnlistedRanks.SGT => EnlistedRanks.CPL,
+                EnlistedRanks.TSGT => EnlistedRanks.SGT,
+                EnlistedRanks.GSGT => EnlistedRanks.TSGT,
+                EnlistedRanks.MSGT => EnlistedRanks.GSGT,
                 _ => throw new System.NotImplementedException()
             };
         }
@@ -89,7 +75,7 @@
             return rank switch
             {
                 // Only the MSgt can't promote, everyone else can
-                EnlistedRanks.MasterSergeant => false,
+                EnlistedRanks.MSGT => false,
                 _ => true,
             };
         }
@@ -98,17 +84,17 @@
         {
             return ranks switch
             {
-                EnlistedRanks.Private => EnlistedRanks.Specialist,
-                EnlistedRanks.Specialist => EnlistedRanks.LanceCorporal,
-                EnlistedRanks.LanceCorporal => EnlistedRanks.Corporal,
-                EnlistedRanks.Corporal => EnlistedRanks.Sergeant,
-                EnlistedRanks.Sergeant => EnlistedRanks.TechSergeant,
-                EnlistedRanks.TechSergeant => EnlistedRanks.GunnerySergeant,
-                EnlistedRanks.GunnerySergeant => EnlistedRanks.MasterSergeant,
+                EnlistedRanks.PFC => EnlistedRanks.SPEC,
+                EnlistedRanks.SPEC => EnlistedRanks.LCPL,
+                EnlistedRanks.LCPL => EnlistedRanks.CPL,
+                EnlistedRanks.CPL => EnlistedRanks.SGT,
+                EnlistedRanks.SGT => EnlistedRanks.TSGT,
+                EnlistedRanks.TSGT => EnlistedRanks.GSGT,
+                EnlistedRanks.GSGT => EnlistedRanks.MSGT,
 
                 // This case will only happen if CanPromote is never checked.
-                EnlistedRanks.MasterSergeant => throw new System.NotSupportedException(),
-                _ => EnlistedRanks.Private,
+                EnlistedRanks.MSGT => throw new System.NotSupportedException(),
+                _ => EnlistedRanks.PFC,
             };
         }
     }
