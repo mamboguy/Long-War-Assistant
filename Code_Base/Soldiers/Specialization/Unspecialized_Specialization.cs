@@ -5,14 +5,8 @@ namespace Long_War_Assistant.Code_Base.Soldiers.Specialization
 {
     public class Unspecialized_Specialization : Specialization
     {
-        private SoldierClass _soldierClass;
 
         public Unspecialized_Specialization() : base() { }
-
-        public void AssignSoldierClass(SoldierClass soldierClass)
-        {
-            _soldierClass = soldierClass;
-        }
 
         public override bool CanMakeMEC(XComSoldier soldier)
         {

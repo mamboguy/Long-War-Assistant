@@ -17,7 +17,8 @@
         Goliath,
         Archer,
         Guardian,
-        Shogun
+        Shogun,
+        NONE
     }
 
     /// <summary>

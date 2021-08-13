@@ -7,19 +7,14 @@
         <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-            <SolidColorBrush x:Key="XCOM_Blue"
-                             Color="#FF69E8EC" />
-            <SolidColorBrush x:Key="XCOM_Black"
-                             Color="Black" />
-            <SolidColorBrush x:Key="XCOM_DarkBlue"
-                             Color="#FF4E7D83" />
+            <SolidColorBrush x:Key="XCOM_Blue" Color="#FF69E8EC" />
+            <SolidColorBrush x:Key="XCOM_Black" Color="Black" />
+            <SolidColorBrush x:Key="XCOM_DarkBlue" Color="#FF4E7D83" />
+            <SolidColorBrush x:Key="XCOM_HoverGray" Color="#FF90ACCD"></SolidColorBrush>
 
-            <Style TargetType="Label"
-                   x:Key="XcomText">
-                <Setter Property="Foreground"
-                        Value="{StaticResource XCOM_Blue}" />
-                <Setter Property="FontFamily"
-                        Value="Century Gothic" />
+            <Style TargetType="Label" x:Key="XcomText">
+                <Setter Property="Foreground" Value="{StaticResource XCOM_Blue}" />
+                <Setter Property="FontFamily" Value="Malgun Semilight" />
             </Style>
 
             <!-- Main Menu Navigation Button style-->

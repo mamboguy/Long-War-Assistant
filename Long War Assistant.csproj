@@ -164,6 +164,7 @@
     <None Remove="Forms\Images\SoldierViewer\ClassIcons\Infantry_Psi.png" />
     <None Remove="Forms\Images\SoldierViewer\ClassIcons\Medic.png" />
     <None Remove="Forms\Images\SoldierViewer\ClassIcons\Medic_Psi.png" />
+    <None Remove="Forms\Images\SoldierViewer\ClassIcons\None.png" />
     <None Remove="Forms\Images\SoldierViewer\ClassIcons\Rocketeer.png" />
     <None Remove="Forms\Images\SoldierViewer\ClassIcons\Rocketeer_Psi.png" />
     <None Remove="Forms\Images\SoldierViewer\ClassIcons\Scout.png" />
@@ -378,6 +379,7 @@
     <Resource Include="Forms\Images\SoldierViewer\ClassIcons\Infantry_Psi.png" />
     <Resource Include="Forms\Images\SoldierViewer\ClassIcons\Medic.png" />
     <Resource Include="Forms\Images\SoldierViewer\ClassIcons\Medic_Psi.png" />
+    <Resource Include="Forms\Images\SoldierViewer\ClassIcons\None.png" />
     <Resource Include="Forms\Images\SoldierViewer\ClassIcons\Rocketeer.png" />
     <Resource Include="Forms\Images\SoldierViewer\ClassIcons\Rocketeer_Psi.png" />
     <Resource Include="Forms\Images\SoldierViewer\ClassIcons\Scout.png" />
